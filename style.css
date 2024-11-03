@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+body:hover {
+    background-color: #f0f0f0;
+}
+
+.cv-container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cv-container:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    align-items: center;
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #007bff;
+}
+
+.personal-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.personal-info h1 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.personal-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.personal-info i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .cv-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.header-container {
+        flex-direction: column;
+        text-align: center;
+}
+
+.profile-image {
+        margin-bottom: 15px;
+}
+
+.personal-info {
+        margin-left: 0;
+}
+
+.personal-info h1 {
+        font-size: 26px;
+}
+
+.personal-info p {
+        font-size: 14px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+h2:hover {
+    color: #007bff;
+    border-bottom-color: #0056b3;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin: 15px 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+table th:hover {
+    background-color: #0056b3;
+}
+
+table td {
+    background-color: #f8f9fa;
+}
+
+table td:hover {
+    background-color: #e2e6ea;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    color: #333;
+    transition: color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+ul li:hover {
+    color: #007bff;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #007bff;
+    font-size: 24px;
+    line-height: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Button-like hover effect on the container */
+.cv-container:hover {
+    transform: scale(1.02);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p, p, ul li, table th, table td {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
